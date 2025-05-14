@@ -30,7 +30,7 @@ This guide walks you through setting up a **Pharos testnet node** using Docker a
 
 ---
 
-** 🧱 1. Prepare Working Directory** 
+**2.Prepare Working Directory** 
 
 ```bash
 docker stop pharos-testnet && docker rm pharos-testnet
@@ -50,7 +50,7 @@ cd /data/$WORKSPACE```
 
 ```mkdir /app/$WORKSPACE```
 
-**⚙️  2. Create docker-compose.yml** 
+**3. Create docker-compose.yml** 
 Save the following in your $WORKSPACE directory:
 ```version: '3'
 
@@ -66,20 +66,20 @@ services:
       - "19000:19000"
     restart: unless-stopped```
 
-**🚀 3. Start the Node** 
+**4. Start the Node** 
 Run the following inside $WORKSPACE:
 ```docker-compose up -d```
 # or
 ```docker compose up -d```
 
-**🔄 4. Wait for Sync** 
+**5. Wait for Sync** 
 Check block sync after ~3 minutes:
 ```curl 127.0.0.1:18100/ \
   -X POST \
   -H "Content-Type: application/json" \
   --data '{"method":"eth_blockNumber","params":[],"id":1,"jsonrpc":"2.0"}'```
 
-**🧰 Other Commands** 
+**Other Commands** 
 
 # Stop
 ```docker-compose stop```

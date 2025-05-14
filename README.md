@@ -30,28 +30,24 @@ sudo systemctl restart docker
 **##🛰️ Pharos Validator Node Deployment (Testnet)**
 This guide walks you through setting up a **Pharos testnet node** using Docker and `docker-compose`.
 
-
 # Preparation
 **2. Prepare Working Directory** 
-
 ```bash
 docker stop pharos-testnet && docker rm pharos-testnet
 
 export WORKSPACE=testnet
 ```
-
-**Optional: Backup snapshot
+**Optional: Backup snapshot**
 ```mv /data/$WORKSPACE/pharos-node/domain/light/data/public/ /data/
 ```
 
-** Clean and recreate workspace** 
+**Clean and recreate workspace** 
 ```rm -rf /data/$WORKSPACE
 mkdir -p /data/$WORKSPACE
 cd /data/$WORKSPACE
 ```
 
 **Tip: If your data disk is mounted in /app, replace /data with /app accordingly:**
-
 ```mkdir /app/$WORKSPACE
 ```
 
@@ -89,20 +85,16 @@ Check block sync after ~3 minutes:
 ```
 
 **Other Commands** 
-
-# Stop
+ Stop:
 ```docker-compose stop
 ```
-
-# Restart
+Restart"
 ```docker-compose restart
 ```
-
-# Update image
+Update image:
 ```docker-compose pull
 ```
-
-# Full refresh
+Full refresh:
 ```docker-compose down && docker-compose up -d
 ```
 

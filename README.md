@@ -18,19 +18,18 @@ sudo apt update -y && sudo apt upgrade -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin```
 
-** Test Docker** 
+**Test Docker** 
 ```sudo docker run hello-world
 
 sudo systemctl enable docker
 sudo systemctl restart docker```
 
-# #🛰️ Pharos Validator Node Deployment (Testnet)
-
+**##🛰️ Pharos Validator Node Deployment (Testnet)**
 This guide walks you through setting up a **Pharos testnet node** using Docker and `docker-compose`.
 
----
 
-**2.Prepare Working Directory** 
+
+**2. Prepare Working Directory** 
 
 ```bash
 docker stop pharos-testnet && docker rm pharos-testnet

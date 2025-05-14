@@ -72,7 +72,7 @@ services:
 Run the following inside $WORKSPACE:
 ```docker-compose up -d
 ```
-# or
+ or:
 ```docker compose up -d
 ```
 

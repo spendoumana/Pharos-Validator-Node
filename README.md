@@ -70,11 +70,11 @@ services:
 
 **4. Start the Node** 
 Run the following inside $WORKSPACE:
-```docker-compose up -d
-```
- or:
-```docker compose up -d
-```
+docker-compose up -d
+
+ #or:
+ 
+docker compose up -d
 
 **5. Wait for Sync** 
 Check block sync after ~3 minutes:
@@ -86,15 +86,15 @@ Check block sync after ~3 minutes:
 
 **Other Commands** 
  Stop:
-```docker-compose stop
-```
-Restart"
-```docker-compose restart
-```
-Update image:
-```docker-compose pull
-```
-Full refresh:
-```docker-compose down && docker-compose up -d
-```
+docker-compose stop
+
+#Restart:
+docker-compose restart
+
+#Update image:
+docker-compose pull
+
+#Full refresh:
+docker-compose down && docker-compose up -d
+
 
